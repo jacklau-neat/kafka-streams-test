@@ -58,12 +58,12 @@ CREATE STREAM xero_invoices \
 WITH (KAFKA_TOPIC='xero-invoices', VALUE_FORMAT='JSON', TIMESTAMP='Date');
 ```
 
-5. Run [Order to XeroInvoice Script ](src/main/scala/XeroInvoiceETL)
+5. Run [Order to XeroInvoice Script ](src/main/scala/XeroInvoiceETL.scala)
 ```bash
 sbt "runMain XeroInvoiceETL"
 ```
 
-6. Run [Xero Consumer](src/main/scala/XeroConsumer)
+6. Run [Xero Consumer](src/main/scala/XeroConsumer.scala)
 ```bash
 sbt "runMain XeroConsumer"
 ```
