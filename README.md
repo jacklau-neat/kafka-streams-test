@@ -1,5 +1,6 @@
 # kafka-streams-test
-A prototype demonstrates stream processing by using Kafka
+A prototype demonstrates stream processing by using Kafka.
+![Architecture](architecture.jpg)
 
 ## Prerequisite
 * [Docker Compose](https://docs.docker.com/compose/install/)
@@ -70,3 +71,8 @@ sbt "runMain XeroConsumer"
 
 ## Results
 ![Kafka Demo Results](kafka-demo.gif)
+
+## Reference
+* Confluent Quick Start (https://docs.confluent.io/current/quickstart/cos-docker-quickstart.html)
+* Stream Processing Framework comparison (https://www.linkedin.com/pulse/spark-streaming-vs-flink-storm-kafka-streams-samza-choose-prakash)
+* Scaling in Kafka Streams (https://www.confluent.io/blog/elastic-scaling-in-kafka-streams/)
