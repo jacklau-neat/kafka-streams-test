@@ -76,3 +76,30 @@ sbt "runMain XeroConsumer"
 * Confluent Quick Start (https://docs.confluent.io/current/quickstart/cos-docker-quickstart.html)
 * Stream Processing Framework comparison (https://www.linkedin.com/pulse/spark-streaming-vs-flink-storm-kafka-streams-samza-choose-prakash)
 * Scaling in Kafka Streams (https://www.confluent.io/blog/elastic-scaling-in-kafka-streams/)
+
+----
+## Things to Consider
+
+### Alternative
+* Apache Flink (https://www.confluent.io/blog/apache-flink-apache-kafka-streams-comparison-guideline-users/)
+
+### Programming Language
+* Any Langauge can write Producer & Consumer (Offical Clients or REST Proxy)
+* Streams API only available on JVM Langauage
+
+### Event Message Schema
+* Support any serialization formats
+* KSQL only supports plain text, JSON, Avro Schema
+
+### Monitoring
+* Kafka Monitoring
+* Stream Processor Monitoring (AppSignal don't have Java client)
+
+### Scaling
+* Stream Processor & Consumer
+* Partitioning Kafka Topics
+
+### Data Archives
+* Default Retention Period = 7 days (can be forever)
+* Event Sourcing
+* Replay topic messages
